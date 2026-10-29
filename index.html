@@ -5,7 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AuditPilot — Enterprise B2B Website Audit & Client Acquisition Engine</title>
   <meta name="description" content="Generate enterprise-grade website conversion audits, diagnose revenue leaks, and synthesize high-converting client pitch decks in 60 seconds.">
+  <meta name="keywords" content="website audit, conversion rate optimization, agency pitch deck, b2b client acquisition, website speed audit, revenue leak calculator">
+  <meta name="author" content="AuditPilot Inc.">
+  <meta name="theme-color" content="#2563EB">
+  <link rel="canonical" href="https://auditpilot.us/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://auditpilot.us/">
+  <meta property="og:title" content="AuditPilot — Enterprise B2B Website Audit & Client Acquisition Engine">
+  <meta property="og:description" content="Diagnose revenue leaks, run Core Web Vitals diagnostics, and generate white-label client proposals in 60 seconds.">
+  <meta property="og:image" content="./dashboard-preview.jpg">
+  <meta property="og:site_name" content="AuditPilot">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://auditpilot.us/">
+  <meta name="twitter:title" content="AuditPilot — Enterprise B2B Website Audit Engine">
+  <meta name="twitter:description" content="Close high-ticket agency web clients with data-backed revenue leakage audits.">
+  <meta name="twitter:image" content="./dashboard-preview.jpg">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="./logo.jpg">
+  <link rel="apple-touch-icon" href="./logo.jpg">
 
   <!-- Production Security & Automatic HTTPS Enforcement -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -14,8 +36,112 @@
       location.replace('https:' + location.href.substring(location.protocol.length));
     }
   </script>
-  <script type="module" crossorigin src="./assets/index-DqGlEA3o.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CS4q6jJR.css">
+
+  <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "AuditPilot",
+        "url": "https://auditpilot.us",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "description": "B2B Website Conversion Audit & Agency Client Acquisition Platform.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1420"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter Hustler",
+            "price": "29.99",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          },
+          {
+            "@type": "Offer",
+            "name": "Agency Pro",
+            "price": "79.99",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise Scale",
+            "price": "199.99",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "name": "AuditPilot Inc.",
+        "url": "https://auditpilot.us",
+        "logo": "https://auditpilot.us/logo.jpg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "support@auditpilot.us",
+          "contactType": "Customer Support"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://auditpilot.us/#website",
+        "url": "https://auditpilot.us/",
+        "name": "AuditPilot",
+        "description": "Enterprise B2B Website Conversion Audit & Client Acquisition Engine",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AuditPilot Inc."
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the Revenue Leak Calculator estimate dollar figures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The calculator applies industry-specific conversion benchmarks correlated with Core Web Vitals mobile latency (LCP) and tap target accessibility. By analyzing estimated monthly traffic against average order values, it calculates the baseline drop-off curve caused by high bounce rates and buried call-to-actions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I brand reports with my own agency logo and colors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! With Agency Pro and Enterprise plans, you have full access to the White-Label Studio. Enter your agency name, logo, phone, email, and Calendly booking link. All exported PDF diagnostic reports and client views will feature your brand, with zero mention of AuditPilot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Stripe billing work and can I cancel anytime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Billing is processed securely through Stripe with 256-bit SSL encryption. All plans come with a 14-day free trial. You can upgrade, downgrade, or cancel your subscription at any time with a single click from your Billing & Plans dashboard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I host this on GitHub Pages and a custom domain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AuditPilot is built as a production-ready single-page application with relative asset bundling. You can host the public frontend on GitHub Pages completely free, and configure a custom domain via standard CNAME records in minutes."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="module" crossorigin src="./assets/index-D2LkN_PF.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DUmzX_wG.css">
 </head>
 <body>
 
@@ -70,6 +196,12 @@
 
       <!-- User Account Action State -->
       <div class="nav-user-actions">
+        <!-- Live Audit Credit Balance Chip -->
+        <div class="nav-credits-chip" id="navCreditsChip" style="display: none;">
+          <span id="navCreditsIcon">⚡</span>
+          <span id="navCreditsText">5 Credits Left</span>
+        </div>
+
         <!-- Logged In Dropdown Menu -->
         <div class="user-menu-wrapper" id="userMenuWrapper">
           <button class="user-avatar-btn" id="userAvatarBtn" aria-label="Open user settings">
@@ -103,6 +235,11 @@
             <button class="dropdown-item" data-view-target="billing">
               <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
               <span>Billing & Invoices</span>
+            </button>
+
+            <button class="dropdown-item" id="openPrivacySettingsBtn">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              <span>Privacy & GDPR Controls</span>
             </button>
 
             <button class="dropdown-item danger" id="logoutDropdownBtn" style="border-top: 1px solid var(--color-border-subtle); margin-top: 0.35rem; padding-top: 0.65rem;">
@@ -340,29 +477,64 @@
             <!-- Dynamically populated -->
           </div>
 
-          <!-- Automated Pitch Studio -->
-          <div class="pitch-studio-wrapper">
-            <div class="pitch-studio-header">
-              <div>
-                <span class="ui-badge badge-blue" style="margin-bottom: 0.25rem;">Deal Closer Studio</span>
-                <h3 style="font-size: 1.15rem; font-weight: 700;" id="pitchTypeHeading">Personalized Cold Outreach Sequence</h3>
+          <!-- Guest Locked Banner for remaining deep issues -->
+          <div class="issues-gated-banner" id="issuesGuestGateBanner" style="display: none;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                <span class="ui-badge badge-amber">2 Issues Locked</span>
+                <strong style="color: var(--color-text-main);">Unlock Remaining Technical Root Causes & Fixes</strong>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">
+                Create a free account in 30 seconds to reveal the full diagnostic breakdown and step-by-step code remedies.
+              </p>
+            </div>
+            <button class="btn btn-primary trigger-signup-btn" style="white-space: nowrap;">
+              Unlock Full Report Free →
+            </button>
+          </div>
+
+          <!-- Automated Pitch Studio (With Guest Gate Overlay) -->
+          <div class="pitch-studio-locked-container" id="pitchStudioContainer">
+            <div class="pitch-studio-wrapper" id="pitchStudioInner">
+              <div class="pitch-studio-header">
+                <div>
+                  <span class="ui-badge badge-blue" style="margin-bottom: 0.25rem;">Deal Closer Studio</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700;" id="pitchTypeHeading">Personalized Cold Outreach Sequence</h3>
+                </div>
+
+                <div class="pitch-selector-tabs">
+                  <button class="pitch-pill-btn active" data-pitch-type="email">Cold Email</button>
+                  <button class="pitch-pill-btn" data-pitch-type="loom">60s Video Script</button>
+                  <button class="pitch-pill-btn" data-pitch-type="proposal">Client Proposal</button>
+                </div>
               </div>
 
-              <div class="pitch-selector-tabs">
-                <button class="pitch-pill-btn active" data-pitch-type="email">Cold Email</button>
-                <button class="pitch-pill-btn" data-pitch-type="loom">60s Video Script</button>
-                <button class="pitch-pill-btn" data-pitch-type="proposal">Client Proposal</button>
+              <div class="pitch-editor-card">
+                <textarea class="pitch-textarea-output" id="pitchTextarea" spellcheck="false"></textarea>
+                
+                <div class="pitch-floating-actions">
+                  <button class="btn btn-secondary btn-sm" id="copyPitchScriptBtn">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <span>Copy to Clipboard</span>
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div class="pitch-editor-card">
-              <textarea class="pitch-textarea-output" id="pitchTextarea" spellcheck="false"></textarea>
-              
-              <div class="pitch-floating-actions">
-                <button class="btn btn-secondary btn-sm" id="copyPitchScriptBtn">
-                  <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                  <span>Copy to Clipboard</span>
-                </button>
+            <!-- Guest Gating Lock Overlay -->
+            <div class="locked-overlay-card" id="pitchStudioGuestGate" style="display: none;">
+              <div class="locked-overlay-box">
+                <div class="feature-gate-icon-box" style="width: 48px; height: 48px; margin-bottom: 1rem;">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Unlock Personalized Pitch & Loom Script</h3>
+                <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                  Generate word-for-word 60s video audit scripts, high-converting cold email sequences, and two-tier redesign proposals tailored to this prospect.
+                </p>
+                <button class="btn btn-primary trigger-signup-btn" style="width: 100%;">Create Free Account to Unlock →</button>
+                <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.75rem;">
+                  Already have an account? <a href="#" class="trigger-signin-btn" style="color: var(--color-primary); font-weight: 600;">Sign In</a>
+                </div>
               </div>
             </div>
           </div>
@@ -519,7 +691,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 700;">Starter Hustler</h3>
               <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.35rem 0 1rem;">For solo freelancers launching cold outreach.</p>
               <div style="font-size: 2.25rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 1.25rem;">
-                <span class="price-val-starter">$29</span> <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);" class="price-sub-starter">/ month</span>
+                <span class="price-val-starter">$29.99</span> <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);" class="price-sub-starter">/ month</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
                 <li>✓ 30 Full Audits / month</li>
@@ -529,8 +701,8 @@
                 <li>✓ Basic Pipeline Tracker</li>
               </ul>
             </div>
-            <button class="btn btn-secondary trigger-signup-btn" style="width: 100%;">
-              Start 14-Day Free Trial
+            <button class="btn btn-secondary" onclick="openStripeCheckout('starter')" style="width: 100%;">
+              Subscribe to Starter ($29.99/mo)
             </button>
           </div>
 
@@ -541,7 +713,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 700;">Agency Pro</h3>
               <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.35rem 0 1rem;">For growing web design and SEO agencies.</p>
               <div style="font-size: 2.25rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 1.25rem;">
-                <span class="price-val-agency">$79</span> <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);" class="price-sub-agency">/ month</span>
+                <span class="price-val-agency">$79.99</span> <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);" class="price-sub-agency">/ month</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
                 <li>✓ <strong>Unlimited</strong> Client Audits</li>
@@ -549,11 +721,11 @@
                 <li>✓ 60-Second Loom Video Pitch Generator</li>
                 <li>✓ Two-Tier Proposal & Pricing Builder</li>
                 <li>✓ Full Outreach CRM Kanban Pipeline</li>
-                <li>✓ Live Stripe Payment Link Integration</li>
+                <li>✓ Live Stripe Customer Portal Access</li>
               </ul>
             </div>
-            <button class="btn btn-primary trigger-signup-btn" style="width: 100%;">
-              Start 14-Day Free Trial
+            <button class="btn btn-primary" onclick="openStripeCheckout('agency')" style="width: 100%;">
+              Subscribe to Agency Pro ($79.99/mo)
             </button>
           </div>
 
@@ -563,7 +735,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 700;">Enterprise Scale</h3>
               <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.35rem 0 1rem;">For sales teams and high-volume outbound.</p>
               <div style="font-size: 2.25rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 1.25rem;">
-                <span class="price-val-enterprise">$199</span> <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);" class="price-sub-enterprise">/ month</span>
+                <span class="price-val-enterprise">$199.99</span> <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);" class="price-sub-enterprise">/ month</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
                 <li>✓ Everything in Agency Pro</li>
@@ -573,8 +745,8 @@
                 <li>✓ Dedicated Slack channel & onboarding</li>
               </ul>
             </div>
-            <button class="btn btn-secondary trigger-signup-btn" style="width: 100%;">
-              Start 14-Day Free Trial
+            <button class="btn btn-secondary" onclick="openStripeCheckout('enterprise')" style="width: 100%;">
+              Upgrade to Enterprise ($199.99/mo)
             </button>
           </div>
         </div>
@@ -658,51 +830,74 @@
     <div class="app-view" id="view-saved-audits">
       <div class="container section-tight">
         
-        <div class="dashboard-page-header">
-          <div>
-            <h1 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Saved Audits Archive</h1>
-            <p style="color: var(--color-text-muted); font-size: 0.92rem;">Manage and review past client diagnostic reports.</p>
+        <!-- Authenticated Content -->
+        <div id="savedAuditsAuthContent" style="display: none;">
+          <div class="dashboard-page-header">
+            <div>
+              <h1 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Saved Audits Archive</h1>
+              <p style="color: var(--color-text-muted); font-size: 0.92rem;">Manage and review past client diagnostic reports.</p>
+            </div>
+
+            <button class="btn btn-primary" data-view-target="audit">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>Run New Audit</span>
+            </button>
           </div>
 
-          <button class="btn btn-primary" data-view-target="audit">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-            <span>Run New Audit</span>
-          </button>
+          <!-- Real-time Search & Filter Bar -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; gap: 1rem; flex-wrap: wrap;">
+            <div style="position: relative; max-width: 380px; width: 100%;">
+              <input 
+                type="text" 
+                class="form-input-b2b" 
+                id="savedAuditsSearchInput" 
+                placeholder="Search saved audits by domain or niche..."
+                style="padding-left: 2.25rem;"
+              />
+              <svg style="position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--color-text-muted); width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <div style="font-size: 0.88rem; color: var(--color-text-muted);" id="savedAuditsCountLabel">
+              Showing all audits
+            </div>
+          </div>
+
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Domain Name</th>
+                  <th>Industry</th>
+                  <th>Date Scanned</th>
+                  <th>Health Score</th>
+                  <th>Monthly Leak</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="savedAuditsTableBody">
+                <!-- Populated via main.js -->
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        <!-- Real-time Search & Filter Bar -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; gap: 1rem; flex-wrap: wrap;">
-          <div style="position: relative; max-width: 380px; width: 100%;">
-            <input 
-              type="text" 
-              class="form-input-b2b" 
-              id="savedAuditsSearchInput" 
-              placeholder="Search saved audits by domain or niche..."
-              style="padding-left: 2.25rem;"
-            />
-            <svg style="position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--color-text-muted); width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <!-- Unauthenticated Guest Feature Gate -->
+        <div id="savedAuditsGate" class="feature-gate-screen">
+          <div class="feature-gate-icon-box">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
           </div>
-          <div style="font-size: 0.88rem; color: var(--color-text-muted);" id="savedAuditsCountLabel">
-            Showing all audits
+          <h2 class="feature-gate-title">Saved Audits Archive (Account Required)</h2>
+          <p class="feature-gate-desc">
+            Save unlimited website conversion diagnostics, track historical score improvements, and export client comparison decks across months. Create a free trial account to activate your archive.
+          </p>
+          <div class="feature-gate-actions">
+            <button class="btn btn-primary btn-lg trigger-signup-btn">Start 14-Day Free Trial →</button>
+            <button class="btn btn-secondary btn-lg trigger-signin-btn">Sign In to Account</button>
           </div>
-        </div>
-
-        <div class="data-table-container">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Domain Name</th>
-                <th>Industry</th>
-                <th>Date Scanned</th>
-                <th>Health Score</th>
-                <th>Monthly Leak</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="savedAuditsTableBody">
-              <!-- Populated via main.js -->
-            </tbody>
-          </table>
+          <div class="feature-gate-perks">
+            <div class="feature-gate-perk-item">✓ Unlimited report retention</div>
+            <div class="feature-gate-perk-item">✓ Client score tracking</div>
+            <div class="feature-gate-perk-item">✓ 1-Click PDF exports</div>
+          </div>
         </div>
 
       </div>
@@ -714,63 +909,86 @@
     <div class="app-view" id="view-crm">
       <div class="container section-tight">
         
-        <div class="dashboard-page-header">
-          <div>
-            <h1 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Client Outreach Pipeline</h1>
-            <p style="color: var(--color-text-muted); font-size: 0.92rem;">Track prospective clients from initial audit to signed deal.</p>
+        <!-- Authenticated CRM Kanban Content -->
+        <div id="crmAuthContent" style="display: none;">
+          <div class="dashboard-page-header">
+            <div>
+              <h1 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Client Outreach Pipeline</h1>
+              <p style="color: var(--color-text-muted); font-size: 0.92rem;">Track prospective clients from initial audit to signed deal.</p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="text-align: right;">
+                <div style="font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase;">Active Pipeline</div>
+                <strong style="font-size: 1.25rem; color: var(--color-primary);" id="crmPipelineTotal">$0</strong>
+              </div>
+              <button class="btn btn-primary" id="addNewLeadBtn">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <span>Add Prospect</span>
+              </button>
+            </div>
           </div>
 
-          <div style="display: flex; align-items: center; gap: 1rem;">
-            <div style="text-align: right;">
-              <div style="font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase;">Active Pipeline</div>
-              <strong style="font-size: 1.25rem; color: var(--color-primary);" id="crmPipelineTotal">$0</strong>
+          <!-- Kanban Board -->
+          <div class="crm-kanban-board">
+            
+            <!-- Col 1: Draft -->
+            <div class="kanban-col">
+              <div class="kanban-col-header">
+                <span>Audited (Draft)</span>
+                <span class="ui-badge badge-slate" id="kanban-count-draft">0</span>
+              </div>
+              <div class="kanban-cards-stack" id="kanban-col-draft"></div>
             </div>
-            <button class="btn btn-primary" id="addNewLeadBtn">
-              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-              <span>Add Prospect</span>
-            </button>
+
+            <!-- Col 2: Pitch Sent -->
+            <div class="kanban-col">
+              <div class="kanban-col-header">
+                <span>Pitch Sent</span>
+                <span class="ui-badge badge-blue" id="kanban-count-pitch_sent">0</span>
+              </div>
+              <div class="kanban-cards-stack" id="kanban-col-pitch_sent"></div>
+            </div>
+
+            <!-- Col 3: Meeting Booked -->
+            <div class="kanban-col">
+              <div class="kanban-col-header">
+                <span>Meeting Booked</span>
+                <span class="ui-badge badge-amber" id="kanban-count-meeting_booked">0</span>
+              </div>
+              <div class="kanban-cards-stack" id="kanban-col-meeting_booked"></div>
+            </div>
+
+            <!-- Col 4: Deal Won -->
+            <div class="kanban-col">
+              <div class="kanban-col-header">
+                <span>Deal Won 🎉</span>
+                <span class="ui-badge badge-green" id="kanban-count-deal_won">0</span>
+              </div>
+              <div class="kanban-cards-stack" id="kanban-col-deal_won"></div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Kanban Board -->
-        <div class="crm-kanban-board">
-          
-          <!-- Col 1: Draft -->
-          <div class="kanban-col">
-            <div class="kanban-col-header">
-              <span>Audited (Draft)</span>
-              <span class="ui-badge badge-slate" id="kanban-count-draft">0</span>
-            </div>
-            <div class="kanban-cards-stack" id="kanban-col-draft"></div>
+        <!-- Unauthenticated Guest Feature Gate -->
+        <div id="crmGate" class="feature-gate-screen">
+          <div class="feature-gate-icon-box">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
           </div>
-
-          <!-- Col 2: Pitch Sent -->
-          <div class="kanban-col">
-            <div class="kanban-col-header">
-              <span>Pitch Sent</span>
-              <span class="ui-badge badge-blue" id="kanban-count-pitch_sent">0</span>
-            </div>
-            <div class="kanban-cards-stack" id="kanban-col-pitch_sent"></div>
+          <h2 class="feature-gate-title">Outreach CRM Pipeline (Account Required)</h2>
+          <p class="feature-gate-desc">
+            Organize prospective redesign clients, track pipeline dollar totals, record Loom video timestamps, and move deals through to won retainers. Create your free account to unlock your acquisition pipeline.
+          </p>
+          <div class="feature-gate-actions">
+            <button class="btn btn-primary btn-lg trigger-signup-btn">Start 14-Day Free Trial →</button>
+            <button class="btn btn-secondary btn-lg trigger-signin-btn">Sign In to Account</button>
           </div>
-
-          <!-- Col 3: Meeting Booked -->
-          <div class="kanban-col">
-            <div class="kanban-col-header">
-              <span>Meeting Booked</span>
-              <span class="ui-badge badge-amber" id="kanban-count-meeting_booked">0</span>
-            </div>
-            <div class="kanban-cards-stack" id="kanban-col-meeting_booked"></div>
+          <div class="feature-gate-perks">
+            <div class="feature-gate-perk-item">✓ 4-Stage Kanban tracking</div>
+            <div class="feature-gate-perk-item">✓ Auto-sync from audit reports</div>
+            <div class="feature-gate-perk-item">✓ Projected deal calculations</div>
           </div>
-
-          <!-- Col 4: Deal Won -->
-          <div class="kanban-col">
-            <div class="kanban-col-header">
-              <span>Deal Won 🎉</span>
-              <span class="ui-badge badge-green" id="kanban-count-deal_won">0</span>
-            </div>
-            <div class="kanban-cards-stack" id="kanban-col-deal_won"></div>
-          </div>
-
         </div>
 
       </div>
@@ -782,75 +1000,110 @@
     <div class="app-view" id="view-white-label">
       <div class="container section-tight">
         
-        <div class="dashboard-page-header">
-          <div>
-            <h1 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Agency White-Label Studio</h1>
-            <p style="color: var(--color-text-muted); font-size: 0.92rem;">Present diagnostic reports and audit portals entirely under your own agency brand.</p>
-          </div>
-        </div>
-
-        <div class="settings-grid">
-          
-          <!-- Form -->
-          <div class="ui-card" style="padding: 2rem;">
-            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.25rem;">Agency Profile Details</h3>
-            
-            <form id="whiteLabelSettingsForm">
-              <div class="form-group-b2b">
-                <label class="form-label-b2b">Agency Brand Name</label>
-                <input type="text" class="form-input-b2b" id="wlAgencyName" required placeholder="NovaTech Growth Studio">
-              </div>
-
-              <div class="form-group-b2b">
-                <label class="form-label-b2b">Agency Contact Email</label>
-                <input type="email" class="form-input-b2b" id="wlAgencyEmail" required placeholder="team@novatechgrowth.com">
-              </div>
-
-              <div class="form-group-b2b">
-                <label class="form-label-b2b">Agency Phone Number</label>
-                <input type="text" class="form-input-b2b" id="wlAgencyPhone" placeholder="+1 (555) 234-5678">
-              </div>
-
-              <div class="form-group-b2b">
-                <label class="form-label-b2b">Client Booking URL (Calendly / Cal.com)</label>
-                <input type="url" class="form-input-b2b" id="wlBookingUrl" placeholder="https://calendly.com/your-agency/15min">
-              </div>
-
-              <div class="form-group-b2b">
-                <label class="form-label-b2b">Live Stripe Payment Link (Optional for Production)</label>
-                <input type="url" class="form-input-b2b" id="wlStripeLink" placeholder="https://buy.stripe.com/test_...">
-                <div style="font-size: 0.76rem; color: var(--color-text-muted); margin-top: 0.25rem;">
-                  When specified, clients clicking "Upgrade" will be redirected to your live Stripe-hosted checkout page.
-                </div>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
-                Save Agency Settings
-              </button>
-            </form>
+        <!-- Authenticated White-Label Content -->
+        <div id="whiteLabelAuthContent" style="display: none;">
+          <!-- Pro Upgrade Banner (Shown if on Free Trial) -->
+          <div class="wl-pro-gate-banner" id="whiteLabelProBanner" style="display: none;">
+            <div>
+              <span class="ui-badge badge-amber" style="margin-bottom: 0.35rem;">Agency Pro Feature</span>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: #78350F; margin: 0.25rem 0;">White-Label Mode Preview</h3>
+              <p style="font-size: 0.85rem; color: #92400E; margin: 0;">
+                You are currently on the Free Trial plan. You can configure your agency profile below, but full white-label removal on exported client PDFs requires Agency Pro.
+              </p>
+            </div>
+            <button class="btn btn-primary" onclick="openStripeCheckout('agency')">Upgrade to Agency Pro ($79.99/mo)</button>
           </div>
 
-          <!-- Preview -->
-          <div class="ui-card" style="padding: 2rem; background: var(--color-bg-subtle);">
-            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;">Client Presentation Mode</h3>
-            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
-              When White-Label Mode is active:
-            </p>
-
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
-              <li style="display: flex; gap: 0.5rem;"><span style="color: var(--color-accent-growth);">✓</span> All references to AuditPilot are scrubbed from exported PDFs.</li>
-              <li style="display: flex; gap: 0.5rem;"><span style="color: var(--color-accent-growth);">✓</span> Your agency name and letterhead are stamped onto executive reports.</li>
-              <li style="display: flex; gap: 0.5rem;"><span style="color: var(--color-accent-growth);">✓</span> Client booking calendar button links directly to your agency schedule.</li>
-            </ul>
-
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
-              <span class="ui-badge badge-green" style="margin-bottom: 0.5rem;">Status: White-Label Active</span>
-              <div style="font-size: 0.82rem; color: var(--color-text-muted);">
-                Ready for client presentations & in-person meetings.
-              </div>
+          <div class="dashboard-page-header">
+            <div>
+              <h1 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Agency White-Label Studio</h1>
+              <p style="color: var(--color-text-muted); font-size: 0.92rem;">Present diagnostic reports and audit portals entirely under your own agency brand.</p>
             </div>
           </div>
 
+          <div class="settings-grid">
+            
+            <!-- Form -->
+            <div class="ui-card" style="padding: 2rem;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.25rem;">Agency Profile Details</h3>
+              
+              <form id="whiteLabelSettingsForm">
+                <div class="form-group-b2b">
+                  <label class="form-label-b2b">Agency Brand Name</label>
+                  <input type="text" class="form-input-b2b" id="wlAgencyName" required placeholder="NovaTech Growth Studio">
+                </div>
+
+                <div class="form-group-b2b">
+                  <label class="form-label-b2b">Agency Contact Email</label>
+                  <input type="email" class="form-input-b2b" id="wlAgencyEmail" required placeholder="team@novatechgrowth.com">
+                </div>
+
+                <div class="form-group-b2b">
+                  <label class="form-label-b2b">Agency Phone Number</label>
+                  <input type="text" class="form-input-b2b" id="wlAgencyPhone" placeholder="+1 (555) 234-5678">
+                </div>
+
+                <div class="form-group-b2b">
+                  <label class="form-label-b2b">Client Booking URL (Calendly / Cal.com)</label>
+                  <input type="url" class="form-input-b2b" id="wlBookingUrl" placeholder="https://calendly.com/your-agency/15min">
+                </div>
+
+                <div class="form-group-b2b">
+                  <label class="form-label-b2b">Live Stripe Payment Link (Optional for Production)</label>
+                  <input type="url" class="form-input-b2b" id="wlStripeLink" placeholder="https://buy.stripe.com/test_...">
+                  <div style="font-size: 0.76rem; color: var(--color-text-muted); margin-top: 0.25rem;">
+                    When specified, clients clicking "Upgrade" will be redirected to your live Stripe-hosted checkout page.
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                  Save Agency Settings
+                </button>
+              </form>
+            </div>
+
+            <!-- Preview -->
+            <div class="ui-card" style="padding: 2rem; background: var(--color-bg-subtle);">
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;">Client Presentation Mode</h3>
+              <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                When White-Label Mode is active:
+              </p>
+
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+                <li style="display: flex; gap: 0.5rem;"><span style="color: var(--color-accent-growth);">✓</span> All references to AuditPilot are scrubbed from exported PDFs.</li>
+                <li style="display: flex; gap: 0.5rem;"><span style="color: var(--color-accent-growth);">✓</span> Your agency name and letterhead are stamped onto executive reports.</li>
+                <li style="display: flex; gap: 0.5rem;"><span style="color: var(--color-accent-growth);">✓</span> Client booking calendar button links directly to your agency schedule.</li>
+              </ul>
+
+              <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
+                <span class="ui-badge badge-green" id="wlStatusBadge" style="margin-bottom: 0.5rem;">Status: White-Label Active</span>
+                <div style="font-size: 0.82rem; color: var(--color-text-muted);" id="wlStatusText">
+                  Ready for client presentations & in-person meetings.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Unauthenticated Guest Feature Gate -->
+        <div id="whiteLabelGate" class="feature-gate-screen">
+          <div class="feature-gate-icon-box">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+          </div>
+          <h2 class="feature-gate-title">Agency White-Label Studio (Account Required)</h2>
+          <p class="feature-gate-desc">
+            Deliver executive diagnostic audits under your agency's name, logo, phone, email, and Calendly discovery calendar with zero mention of AuditPilot. Sign in or start your free trial to preview.
+          </p>
+          <div class="feature-gate-actions">
+            <button class="btn btn-primary btn-lg trigger-signup-btn">Start 14-Day Free Trial →</button>
+            <button class="btn btn-secondary btn-lg trigger-signin-btn">Sign In to Account</button>
+          </div>
+          <div class="feature-gate-perks">
+            <div class="feature-gate-perk-item">✓ 100% Brand scrubbing</div>
+            <div class="feature-gate-perk-item">✓ Custom booking link</div>
+            <div class="feature-gate-perk-item">✓ Custom accent branding</div>
+          </div>
         </div>
 
       </div>
@@ -900,7 +1153,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 700;">Starter Hustler</h3>
               <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.35rem 0 1rem;">For solo freelancers beginning cold outreach.</p>
               <div style="font-size: 2.25rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 1.25rem;">
-                $29 <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);">/ month</span>
+                $29.99 <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);">/ month</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
                 <li>✓ 30 Audits / month</li>
@@ -909,8 +1162,8 @@
                 <li>✓ PDF Report Exports</li>
               </ul>
             </div>
-            <button class="btn btn-secondary" onclick="openPaymentModal('Starter Hustler', 29)" style="width: 100%;">
-              Switch to Starter
+            <button class="btn btn-secondary" onclick="openStripeCheckout('starter')" style="width: 100%;">
+              Subscribe to Starter ($29.99/mo)
             </button>
           </div>
 
@@ -921,7 +1174,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 700;">Agency Pro</h3>
               <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.35rem 0 1rem;">For growing boutique agencies & consultants.</p>
               <div style="font-size: 2.25rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 1.25rem;">
-                $79 <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);">/ month</span>
+                $79.99 <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);">/ month</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
                 <li>✓ <strong>Unlimited</strong> Audits</li>
@@ -931,8 +1184,8 @@
                 <li>✓ Outreach CRM Pipeline</li>
               </ul>
             </div>
-            <button class="btn btn-primary" onclick="alert('You are currently on the Agency Pro plan.');" style="width: 100%;">
-              Active Plan
+            <button class="btn btn-primary" id="billingAgencyProBtn" onclick="openStripeCheckout('agency')" style="width: 100%;">
+              Subscribe to Agency Pro ($79.99/mo)
             </button>
           </div>
 
@@ -942,7 +1195,7 @@
               <h3 style="font-size: 1.2rem; font-weight: 700;">Enterprise Scale</h3>
               <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.35rem 0 1rem;">For outbound sales teams and large agencies.</p>
               <div style="font-size: 2.25rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 1.25rem;">
-                $199 <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);">/ month</span>
+                $199.99 <span style="font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted);">/ month</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
                 <li>✓ Everything in Agency Pro</li>
@@ -951,8 +1204,8 @@
                 <li>✓ 5 Team Member Seats</li>
               </ul>
             </div>
-            <button class="btn btn-secondary" onclick="openPaymentModal('Enterprise Scale', 199)" style="width: 100%;">
-              Upgrade to Enterprise
+            <button class="btn btn-secondary" onclick="openStripeCheckout('enterprise')" style="width: 100%;">
+              Upgrade to Enterprise ($199.99/mo)
             </button>
           </div>
 
@@ -1266,25 +1519,408 @@
   </div>
 
   <!-- ======================================================================
-       FOOTER
+       ENTERPRISE LEGAL & COMPLIANCE FOOTER
        ====================================================================== -->
   <footer class="site-footer-grounded">
     <div class="container">
-      <div class="footer-bottom-flex">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <div class="brand-icon-box" style="width: 24px; height: 24px;">
-            <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+      
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Security -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.5rem;">
+            <div class="brand-icon-box">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <strong style="font-size: 1.15rem; color: var(--color-text-main);">AuditPilot</strong>
           </div>
-          <strong>AuditPilot Platform</strong> &copy; 2026. All rights reserved.
+          <p class="footer-brand-blurb">
+            The enterprise website audit, revenue loss calculation, and white-label client acquisition engine for growth agencies and consulting firms.
+          </p>
+          <div class="footer-compliance-badges">
+            <span class="footer-badge-pill">🛡️ SOC2 Type II</span>
+            <span class="footer-badge-pill">🔒 GDPR & CCPA</span>
+            <span class="footer-badge-pill">💳 PCI-DSS Level 1</span>
+          </div>
         </div>
-        <div style="display: flex; gap: 1.5rem;">
-          <span>SOC2 Type II Certified</span>
-          <span>PCI-DSS Compliant</span>
-          <span>Status: 99.98% Operational 🟢</span>
+
+        <!-- Col 2: Platform -->
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links-list">
+            <li><a onclick="switchView('view-audit'); window.scrollTo({top:0, behavior:'smooth'});">Audit Scanner</a></li>
+            <li><a onclick="switchView('view-saved-audits'); window.scrollTo({top:0, behavior:'smooth'});">Saved Audits</a></li>
+            <li><a onclick="switchView('view-crm'); window.scrollTo({top:0, behavior:'smooth'});">Outreach Pipeline CRM</a></li>
+            <li><a onclick="switchView('view-white-label'); window.scrollTo({top:0, behavior:'smooth'});">White-Label Studio</a></li>
+            <li><a onclick="switchView('view-billing'); window.scrollTo({top:0, behavior:'smooth'});">Plans & Pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legal & Trust -->
+        <div>
+          <h4 class="footer-col-title">Trust & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a id="footerPrivacyLink">Privacy Policy</a></li>
+            <li><a id="footerTermsLink">Terms of Service</a></li>
+            <li><a id="footerCookieSettingsLink">Cookie Preferences</a></li>
+            <li><a id="footerGdprLink">GDPR Data Rights</a></li>
+            <li><a onclick="openModal('privacyModal')">Subprocessors & Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Account & Billing -->
+        <div>
+          <h4 class="footer-col-title">Billing & Portals</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://billing.stripe.com/p/login/8x29AS6R9d0V5Ps4tT4sE00" target="_blank" rel="noopener">Stripe Customer Portal ↗</a></li>
+            <li><a onclick="openModal('signInModal')">Sign In to Workspace</a></li>
+            <li><a onclick="openModal('signUpModal')">Start 14-Day Free Trial</a></li>
+            <li><a id="footerExportDataLink">Export My Data (JSON)</a></li>
+            <li style="margin-top: 0.5rem; font-size: 0.8rem; color: #16A34A; display: flex; align-items: center; gap: 0.35rem;">
+              <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #16A34A;"></span>
+              All Systems Operational
+            </li>
+          </ul>
         </div>
       </div>
+
+      <div class="footer-bottom-flex">
+        <div>
+          &copy; 2026 AuditPilot Inc. All rights reserved. Registered trademark.
+        </div>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a onclick="openModal('privacyModal')" style="color: inherit; text-decoration: none; cursor: pointer;">Privacy Policy</a>
+          <a onclick="openModal('termsModal')" style="color: inherit; text-decoration: none; cursor: pointer;">Terms of Service</a>
+          <a onclick="openModal('privacySettingsModal')" style="color: inherit; text-decoration: none; cursor: pointer;">Privacy Settings</a>
+          <span>Official Stripe Billing Partner</span>
+        </div>
+      </div>
+
     </div>
   </footer>
+
+  <!-- ======================================================================
+       INTERACTIVE COOKIE CONSENT BANNER (GDPR / ePrivacy)
+       ====================================================================== -->
+  <div class="cookie-consent-bar" id="cookieConsentBar">
+    <div class="cookie-consent-title">
+      <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+      <span>Privacy & Cookie Preferences</span>
+    </div>
+    <p class="cookie-consent-text">
+      We use strictly necessary cookies to keep you signed in and process audit requests securely. We also use analytics cookies to measure audit engine performance in compliance with GDPR & CCPA.
+    </p>
+    <div class="cookie-consent-actions">
+      <button class="btn btn-primary btn-sm" id="cookieAcceptAllBtn">Accept All</button>
+      <button class="btn btn-secondary btn-sm" id="cookieRejectNonEssentialBtn">Essential Only</button>
+      <button class="btn btn-ghost btn-sm" id="cookiePreferencesBtn" style="color: #94A3B8;">Preferences</button>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL: GUEST AUDIT LIMIT EXCEEDED (1 FREE SCAN FOR GUESTS)
+       ====================================================================== -->
+  <div class="modal-backdrop" id="guestLimitModal">
+    <div class="modal-sheet" style="max-width: 520px; text-align: center;">
+      <button class="modal-close-cross" onclick="closeModal('guestLimitModal')">&times;</button>
+      
+      <div style="width: 60px; height: 60px; border-radius: 50%; background: #EFF6FF; border: 1px solid #BFDBFE; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: var(--color-primary);">
+        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+      </div>
+
+      <span class="ui-badge badge-blue" style="margin-bottom: 0.5rem;">Complimentary Scan Used</span>
+      <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 0.5rem;">
+        You've Reached the Guest Limit
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+        Guests are limited to <strong>1 complimentary audit</strong>. Create your free account in 30 seconds to unlock <strong>5 free full audits</strong>, saved client reports, and executive pitch scripts.
+      </p>
+
+      <div style="background: var(--color-bg-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem; text-align: left; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--color-text-secondary);">
+        <div style="font-weight: 700; color: var(--color-text-main); margin-bottom: 0.5rem;">What you unlock with a free account:</div>
+        <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+          <div>✓ <strong>5 Full Website Audits</strong> (Speed, SEO, Security & CRO)</div>
+          <div>✓ <strong>Outreach Pitch Scripts</strong> (Cold email & 60s Loom script)</div>
+          <div>✓ <strong>Saved Audits & PDF Exports</strong> for prospective clients</div>
+          <div>✓ <strong>Zero credit card</strong> required to sign up</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <button class="btn btn-primary btn-lg" onclick="closeModal('guestLimitModal'); openModal('signUpModal');" style="width: 100%;">
+          Create Free Account (5 Credits) →
+        </button>
+        <button class="btn btn-secondary" onclick="closeModal('guestLimitModal'); openModal('signInModal');" style="width: 100%;">
+          Already have an account? Sign In
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL: OUT OF AUDIT CREDITS (FREE TRIAL 5/5 USED)
+       ====================================================================== -->
+  <div class="modal-backdrop" id="outOfCreditsModal">
+    <div class="modal-sheet" style="max-width: 520px; text-align: center;">
+      <button class="modal-close-cross" onclick="closeModal('outOfCreditsModal')">&times;</button>
+      
+      <div style="width: 60px; height: 60px; border-radius: 50%; background: #FEF3C7; border: 1px solid #FCD34D; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: #D97706;">
+        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+      </div>
+
+      <span class="ui-badge badge-amber" style="margin-bottom: 0.5rem;">0 of 5 Credits Remaining</span>
+      <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 0.5rem;">
+        You've Used All Free Trial Audits
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+        You have utilized your 5 free trial audits. Upgrade to <strong>Agency Pro</strong> for unlimited audits, custom white-label branding, and client CRM management.
+      </p>
+
+      <div style="background: #F8FAFC; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.15rem; text-align: left; margin-bottom: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <strong style="font-size: 1.05rem;">Agency Pro Plan</strong>
+          <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary);">$79.99 <span style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-muted);">/ mo</span></span>
+        </div>
+        <div style="font-size: 0.84rem; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.35rem;">
+          <div>✓ <strong>Unlimited</strong> website audits every month</div>
+          <div>✓ <strong>Complete White-Labeling</strong> with your logo & colors</div>
+          <div>✓ <strong>Full CRM Pipeline</strong> with unlimited deal tracking</div>
+          <div>✓ Cancel anytime via the live Stripe Customer Portal</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <button class="btn btn-primary btn-lg" onclick="closeModal('outOfCreditsModal'); openStripeCheckout('agency');" style="width: 100%;">
+          Upgrade to Agency Pro ($79.99/mo) →
+        </button>
+        <button class="btn btn-secondary" onclick="closeModal('outOfCreditsModal'); switchView('billing');" style="width: 100%;">
+          View All Subscription Plans
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL: PRIVACY POLICY (GDPR & CCPA COMPLIANT)
+       ====================================================================== -->
+  <div class="modal-backdrop" id="privacyModal">
+    <div class="modal-sheet legal-modal-sheet">
+      <button class="modal-close-cross" onclick="closeModal('privacyModal')">&times;</button>
+      
+      <div style="border-bottom: 1px solid var(--color-border); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <span class="ui-badge badge-blue" style="margin-bottom: 0.4rem;">Legal Agreement</span>
+        <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--color-text-main);">AuditPilot Privacy Policy</h2>
+        <div style="font-size: 0.82rem; color: var(--color-text-muted);">
+          Effective Date: October 22, 2026 • Compliant with EU GDPR, UK GDPR, and California CCPA/CPRA
+        </div>
+      </div>
+
+      <div class="legal-article">
+        <p>
+          At <strong>AuditPilot Inc.</strong> ("AuditPilot", "we", "us", or "our"), we respect your privacy and are committed to protecting your personal data. This Privacy Policy informs you about how we collect, process, store, and safeguard your data when you visit our website, use our automated audit engine, or subscribe to our SaaS plans.
+        </p>
+
+        <h4>1. Data Controller</h4>
+        <p>
+          AuditPilot Inc. is the data controller responsible for personal data collected through the AuditPilot platform. If you have any inquiries regarding data processing, our Data Protection Officer (DPO) may be contacted at <a href="mailto:privacy@auditpilot.us" style="color: var(--color-primary); font-weight: 600;">privacy@auditpilot.us</a>.
+        </p>
+
+        <h4>2. Data We Collect</h4>
+        <ul>
+          <li><strong>Account Information:</strong> Name, work email address, hashed authentication credentials, and agency details when creating an account.</li>
+          <li><strong>Audited Domain Data:</strong> Public website URLs submitted to our scanner, including public HTTP response headers, SSL certificate expiry, publicly accessible sitemap files, and page load telemetry. We do <em>not</em> scan or store private backend databases or non-public administrative pages.</li>
+          <li><strong>Outreach & CRM Data:</strong> Client prospect names, estimated deal values, and notes entered into your private outreach pipeline.</li>
+          <li><strong>Payment & Billing Data:</strong> Payment details are tokenized and processed exclusively by <strong>Stripe Inc.</strong> (PCI-DSS Level 1 certified). AuditPilot never receives or stores your full credit card number or CVV code.</li>
+          <li><strong>Technical Usage Data:</strong> IP address, browser user-agent, session identifiers, and aggregated feature interactions to maintain security and enforce rate limits.</li>
+        </ul>
+
+        <h4>3. Legal Basis for Processing (GDPR Article 6)</h4>
+        <p>We process your personal data under the following lawful bases:</p>
+        <ul>
+          <li><strong>Performance of a Contract:</strong> To provision your AuditPilot workspace, calculate performance loss estimates, and process subscriptions.</li>
+          <li><strong>Legitimate Interests:</strong> To detect abuse, prevent automated denial-of-service scans, and improve scanning algorithms.</li>
+          <li><strong>Consent:</strong> For non-essential analytics cookies and marketing communications, which can be modified at any time.</li>
+        </ul>
+
+        <h4>4. Third-Party Subprocessors</h4>
+        <p>We work with established enterprise subprocessors adhering to stringent data protection standards:</p>
+        <ul>
+          <li><strong>Stripe, Inc.</strong> — Payment gateway and Customer Portal management.</li>
+          <li><strong>Cloudflare, Inc.</strong> — Content delivery network, SSL termination, and DDoS mitigation.</li>
+        </ul>
+
+        <h4>5. Data Retention & Security</h4>
+        <p>
+          Your account data is retained for the active duration of your subscription. We implement 256-bit AES encryption in transit (HTTPS/TLS 1.3) and at rest. If you choose to close your account, all associated saved audits and pipeline data are permanently purged within 30 days.
+        </p>
+
+        <h4>6. Your Rights Under GDPR & CCPA</h4>
+        <p>Depending on your jurisdiction, you have the right to:</p>
+        <ul>
+          <li><strong>Right to Access:</strong> Request a copy of the personal information we hold about you.</li>
+          <li><strong>Right to Data Portability:</strong> Instantly download all your audits and pipeline leads in structured JSON format via our Privacy Settings modal.</li>
+          <li><strong>Right to Erasure ("Right to Be Forgotten"):</strong> Delete your account and purge all stored data with one click.</li>
+          <li><strong>Right to Rectification:</strong> Correct inaccurate profile or agency information.</li>
+          <li><strong>Right to Restrict or Object:</strong> Opt-out of non-essential analytics and tracking.</li>
+        </ul>
+
+        <h4>7. Contact & Regulatory Recourse</h4>
+        <p>
+          To exercise your privacy rights, please click "Privacy Settings" in your dashboard or email <a href="mailto:privacy@auditpilot.us" style="color: var(--color-primary); font-weight: 600;">privacy@auditpilot.us</a>. You also hold the right to lodge a complaint with your local Data Protection Authority (e.g. ICO in the UK, CNIL in France, or California Privacy Protection Agency).
+        </p>
+      </div>
+
+      <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--color-border); display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button class="btn btn-secondary" onclick="closeModal('privacyModal'); openModal('privacySettingsModal');">Manage Cookie Settings</button>
+        <button class="btn btn-primary" onclick="closeModal('privacyModal')">Close & Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL: TERMS OF SERVICE & ACCEPTABLE USE
+       ====================================================================== -->
+  <div class="modal-backdrop" id="termsModal">
+    <div class="modal-sheet legal-modal-sheet">
+      <button class="modal-close-cross" onclick="closeModal('termsModal')">&times;</button>
+      
+      <div style="border-bottom: 1px solid var(--color-border); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <span class="ui-badge badge-blue" style="margin-bottom: 0.4rem;">Terms Agreement</span>
+        <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--color-text-main);">AuditPilot Terms of Service</h2>
+        <div style="font-size: 0.82rem; color: var(--color-text-muted);">
+          Last Modified: October 22, 2026 • Enterprise SaaS Master Agreement
+        </div>
+      </div>
+
+      <div class="legal-article">
+        <p>
+          These Terms of Service ("Terms") govern your access to and use of the <strong>AuditPilot</strong> platform, website, diagnostic scanning engine, and related services operated by AuditPilot Inc.
+        </p>
+
+        <h4>1. Acceptance & Eligibility</h4>
+        <p>
+          By creating an account, running an audit scan, or subscribing to our paid tiers, you agree to be bound by these Terms. If you are accepting on behalf of an agency, company, or entity, you represent and warrant that you have full authority to bind that entity.
+        </p>
+
+        <h4>2. Permitted Use & Acceptable Scanning Policy</h4>
+        <p>
+          AuditPilot is designed for legitimate agency outreach, website performance auditing, and sales prospecting. You agree that:
+        </p>
+        <ul>
+          <li>You will only audit websites that are publicly accessible over the internet.</li>
+          <li>You will not use the audit engine to launch Denial-of-Service (DoS) attacks, probe private vulnerabilities, or bypass paywalls.</li>
+          <li>You will not reverse engineer or scrape our proprietary pitch generator, revenue loss formulas, or scanning logic.</li>
+        </ul>
+
+        <h4>3. Subscriptions, Stripe Billing & Free Trials</h4>
+        <ul>
+          <li><strong>Free Trials & Credits:</strong> Free trial accounts receive 5 complimentary audit credits. Upon exhaustion of credits, upgrade to a paid subscription is required to run further scans.</li>
+          <li><strong>Auto-Renewal:</strong> Paid subscriptions (Starter Hustler, Agency Pro, Enterprise Scale) are billed in advance on a recurring monthly basis through <strong>Stripe</strong>.</li>
+          <li><strong>Self-Service Cancellation:</strong> You may cancel or modify your subscription at any time via the official Stripe Customer Portal. Cancellations take effect at the end of the current billing cycle.</li>
+          <li><strong>Refund Policy:</strong> We offer a 14-day money-back guarantee for initial subscriptions. Inquiries can be sent to billing@auditpilot.us.</li>
+        </ul>
+
+        <h4>4. Intellectual Property & White-Label Rights</h4>
+        <p>
+          Subscribers to our Agency Pro and Enterprise plans are granted a commercial license to export white-labeled audit reports and presentations stamped with their own logo, branding, and contact details, and deliver them to prospective clients.
+        </p>
+
+        <h4>5. Disclaimer of Warranties</h4>
+        <p>
+          AuditPilot is provided on an "as is" and "as available" basis. Performance loss figures and diagnostic scores are calculated using algorithmic modeling based on standard Core Web Vitals metrics and estimated conversion factors. AuditPilot makes no guarantee that executing suggested fixes will result in specific commercial revenue outcomes.
+        </p>
+
+        <h4>6. Limitation of Liability</h4>
+        <p>
+          To the maximum extent permitted by applicable law, in no event shall AuditPilot Inc. be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of the platform.
+        </p>
+      </div>
+
+      <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--color-border); display: flex; justify-content: flex-end;">
+        <button class="btn btn-primary" onclick="closeModal('termsModal')">I Understand and Agree</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL: PRIVACY PREFERENCES & GDPR DATA CONTROLS
+       ====================================================================== -->
+  <div class="modal-backdrop" id="privacySettingsModal">
+    <div class="modal-sheet" style="max-width: 600px;">
+      <button class="modal-close-cross" onclick="closeModal('privacySettingsModal')">&times;</button>
+      
+      <div style="border-bottom: 1px solid var(--color-border); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <span class="ui-badge badge-blue" style="margin-bottom: 0.35rem;">Compliance Center</span>
+        <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--color-text-main);">Privacy & Cookie Settings</h3>
+        <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+          Manage cookie preferences and exercise your GDPR & CCPA data privacy rights.
+        </p>
+      </div>
+
+      <!-- Cookie Preferences Section -->
+      <div style="margin-bottom: 2rem;">
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Cookie Preferences</h4>
+        
+        <!-- Essential -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 0.85rem 0; border-bottom: 1px solid var(--color-border);">
+          <div>
+            <strong style="font-size: 0.9rem; color: var(--color-text-main); display: block;">Strictly Necessary Cookies</strong>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Required for secure user authentication, CSRF tokens, and Stripe checkout.</span>
+          </div>
+          <span class="ui-badge badge-gray" style="font-size: 0.75rem;">Always Active</span>
+        </div>
+
+        <!-- Analytics -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 0.85rem 0; border-bottom: 1px solid var(--color-border);">
+          <div>
+            <strong style="font-size: 0.9rem; color: var(--color-text-main); display: block;">Performance & Diagnostics</strong>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Measures audit scan completion speed and client report rendering health.</span>
+          </div>
+          <label style="position: relative; display: inline-block; width: 44px; height: 24px; cursor: pointer;">
+            <input type="checkbox" id="cookieAnalyticsToggle" checked style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--color-primary); border-radius: 24px; transition: 0.2s;" class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <!-- Marketing -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 0.85rem 0;">
+          <div>
+            <strong style="font-size: 0.9rem; color: var(--color-text-main); display: block;">Marketing & Communications</strong>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">Personalized updates on new audit metrics and agency growth resources.</span>
+          </div>
+          <label style="position: relative; display: inline-block; width: 44px; height: 24px; cursor: pointer;">
+            <input type="checkbox" id="cookieMarketingToggle" style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #CBD5E1; border-radius: 24px; transition: 0.2s;" class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- GDPR Data Rights Section -->
+      <div style="background: var(--color-bg-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-text-main); margin-bottom: 0.4rem;">
+          GDPR & CCPA Data Portability & Erasure
+        </h4>
+        <p style="font-size: 0.82rem; color: var(--color-text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+          Under GDPR Article 20, you may export a full machine-readable archive of your saved audits, leads, and account data. Under Article 17, you may permanently purge your records.
+        </p>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="btn btn-secondary btn-sm" id="privacyExportDataBtn">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Export My Data (JSON)</span>
+          </button>
+          <button class="btn btn-ghost btn-sm" id="privacyDeleteAccountBtn" style="color: #DC2626;">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+            <span>Delete Account & Erase All Data</span>
+          </button>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button class="btn btn-secondary" onclick="closeModal('privacySettingsModal')">Cancel</button>
+        <button class="btn btn-primary" id="savePrivacySettingsBtn">Save Preferences</button>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
