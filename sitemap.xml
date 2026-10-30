@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -6,21 +7,63 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
         http://www.google.com/schemas/sitemap-image/1.1
         http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
-  <!-- Homepage & Core Conversion Audit Application -->
+
+  <!-- 1. Primary Homepage & Core Conversion Audit Diagnostic Platform -->
   <url>
     <loc>https://auditpilot.us/</loc>
-    <lastmod>2026-10-29T15:00:00+00:00</lastmod>
+    <lastmod>2026-10-30T14:30:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://auditpilot.us/dashboard-preview.jpg</image:loc>
       <image:title>AuditPilot B2B Website Audit &amp; Revenue Leakage Dashboard</image:title>
-      <image:caption>Diagnostic audit report showing Core Web Vitals, mobile conversion friction, and estimated monthly revenue leakage.</image:caption>
+      <image:caption>Comprehensive diagnostic report showing Core Web Vitals, mobile conversion friction, and monthly dollar loss estimates.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://auditpilot.us/logo.jpg</image:loc>
       <image:title>AuditPilot Official Logo</image:title>
-      <image:caption>AuditPilot - Enterprise B2B Website Audit and Client Acquisition Engine</image:caption>
+      <image:caption>AuditPilot — Enterprise B2B Website Audit and Client Acquisition Engine</image:caption>
     </image:image>
   </url>
+
+  <!-- 2. Proven 3-Step Client Acquisition Process -->
+  <url>
+    <loc>https://auditpilot.us/#how-it-works</loc>
+    <lastmod>2026-10-30T14:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 3. Interactive Agency Retainer ROI & Deal Value Calculator -->
+  <url>
+    <loc>https://auditpilot.us/#roi-calculator</loc>
+    <lastmod>2026-10-30T14:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 4. Verified Agency Case Studies & Performance Benchmarks -->
+  <url>
+    <loc>https://auditpilot.us/#case-studies</loc>
+    <lastmod>2026-10-30T14:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 5. Subscription Pricing & Agency Plans -->
+  <url>
+    <loc>https://auditpilot.us/#landing-pricing</loc>
+    <lastmod>2026-10-30T14:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 6. Website Conversion Architecture & Core Web Vitals FAQ -->
+  <url>
+    <loc>https://auditpilot.us/#landing-faqs</loc>
+    <lastmod>2026-10-30T14:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

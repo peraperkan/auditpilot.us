@@ -1,12 +1,12 @@
 # ==============================================================================
-# AuditPilot - Production robots.txt (Google Search Console & Crawlers Optimized)
+# AuditPilot — Production robots.txt (Google Search Console & Search Crawlers)
 # ==============================================================================
 
 User-agent: *
 Allow: /
 Disallow: /api/
 
-# Explicit search engine bots
+# Explicit search engine crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -16,6 +16,19 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Social crawlers for rich snippet link previews
 User-agent: Twitterbot
 Allow: /
 
@@ -25,5 +38,8 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Sitemap for Google Search Console & Bing Webmaster Tools
+User-agent: Slackbot
+Allow: /
+
+# Official XML Sitemap Directive
 Sitemap: https://auditpilot.us/sitemap.xml
