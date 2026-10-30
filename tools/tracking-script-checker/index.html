@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 & Meta Pixel Checker Chrome Extension | AuditPilot</title>
+  <meta name="description" content="Audit web tracking scripts in 1 click. Check Google Analytics 4 (GA4), Google Tag Manager (GTM), Meta Pixel, Microsoft Clarity, and TikTok Pixel with the AuditPilot Chrome extension.">
+  <meta name="keywords" content="ga4 and meta pixel checker extension, google tag manager checker, facebook pixel inspector, tracking script detector, microsoft clarity checker, tiktok pixel extension">
+  <link rel="canonical" href="https://auditpilot.us/tools/tracking-script-checker">
+  <link rel="icon" type="image/jpeg" href="/logo.jpg">
+  <link rel="stylesheet" href="/silo.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://auditpilot.us/tools/tracking-script-checker">
+  <meta property="og:title" content="GA4 & Meta Pixel Checker Chrome Extension | AuditPilot">
+  <meta property="og:description" content="Detect missing tracking pixels, verify GA4 and Meta Pixel firing, and audit analytics setup in real-time.">
+  <meta property="og:image" content="https://auditpilot.us/dashboard-preview.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://auditpilot.us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://auditpilot.us/#core-capabilities"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tracking Script Checker",
+            "item": "https://auditpilot.us/tools/tracking-script-checker"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "AuditPilot Tracking Script & Pixel Checker",
+        "operatingSystem": "Google Chrome, Chromium, Brave, Microsoft Edge",
+        "applicationCategory": "DeveloperApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Inspect and diagnose tracking scripts including GA4, GTM, Meta Pixel, TikTok Pixel, and Microsoft Clarity directly in Chrome."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <div class="brand-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        </div>
+        <span>AuditPilot</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/tools/seo-audit-extension">SEO Extension</a></li>
+        <li><a href="/tools/cro-gap-analysis">CRO Analysis</a></li>
+        <li><a href="/tools/tracking-script-checker" style="color: #60A5FA;">Script Checker</a></li>
+        <li><a href="/features/white-label-reports">White-Label</a></li>
+        <li><a href="/compare/auditpilot-vs-detailed-seo">Comparisons</a></li>
+        <li><a href="/resources/seo-audit-checklist">Checklists</a></li>
+      </ul>
+      <div>
+        <a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener" class="btn btn-chrome">Add to Chrome — Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/#core-capabilities">Tools</a>
+      <span>/</span>
+      <strong>Tracking Script Checker</strong>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="badge">Analytics & Attribution Telemetry</div>
+      <h1 class="hero-title">GA4 and Meta Pixel Checker Chrome Extension</h1>
+      <p class="hero-subtitle">
+        Audit marketing pixels, analytics scripts, and tag manager containers in real time. Verify that Google Analytics 4, Meta Pixel, Microsoft Clarity, and TikTok Pixel are firing accurately without attribution data loss.
+      </p>
+      <div class="hero-actions">
+        <a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener" class="btn btn-chrome btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1rem;">
+          Add Script Checker to Chrome — Free ↗
+        </a>
+        <a href="/#teaser-scanner" class="btn btn-secondary" style="padding: 0.85rem 1.75rem; font-size: 1rem;">
+          Run Web Diagnostic →
+        </a>
+      </div>
+    </section>
+
+    <!-- Supported Pixels Grid -->
+    <section class="section">
+      <h2 class="section-title">Deep Tag & Pixel Verification Suite</h2>
+      <p class="section-intro">
+        Faulty tracking leads to misallocated ad spend and broken reporting. AuditPilot intercepts live network requests and inspects the DOM to confirm tags are healthy.
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3>Google Analytics 4 (GA4)</h3>
+          <p>Verify your Measurement ID (G-XXXXXXXXXX), check pageview dispatch status, and detect common migration errors from legacy Universal Analytics (UA).</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+          </div>
+          <h3>Google Tag Manager (GTM)</h3>
+          <p>Inspect GTM container IDs (GTM-XXXXXXX), verify the dataLayer initialization array, and confirm both `<head>` script and `<body>` noscript fallbacks are installed.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3>Meta Pixel (Facebook Pixel)</h3>
+          <p>Detect Meta Pixel IDs, verify PageView events, and check for standard event triggers (Lead, AddToCart, Purchase) to ensure Meta ad attribution is firing.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+          </div>
+          <h3>Microsoft Clarity & Heatmaps</h3>
+          <p>Verify Microsoft Clarity project IDs, Hotjar snippet installations, and ensure user session recording scripts do not degrade page rendering latency.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg>
+          </div>
+          <h3>TikTok & Pinterest Pixels</h3>
+          <p>Inspect social advertising beacons for e-commerce stores. Confirm TikTok Pixel Base Code and Pinterest Tag event callbacks fire on key actions.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3>LinkedIn Insight Tag</h3>
+          <p>Verify B2B attribution with Partner ID verification, conversion tracking endpoints, and matched audience retargeting verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Tracking Bugs Section -->
+    <section class="section">
+      <h2 class="section-title">Common Tracking Disasters AuditPilot Catches</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="color: #EF4444;">1. Double-Firing Conversion Tags</h3>
+          <p>
+            When a pixel is hardcoded in the theme AND fired through Google Tag Manager, conversions are counted twice. AuditPilot flags duplicate tracking events so your ad networks don't report false CPA metrics.
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="color: #F59E0B;">2. Missing E-Commerce Value Parameters</h3>
+          <p>
+            Firing a Purchase event without revenue or currency parameters leaves ad algorithms blind to ROAS. AuditPilot checks payload structure to ensure ad platforms receive accurate revenue numbers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <div class="cta-box">
+      <h2>Never Fly Blind With Tracking Scripts Again</h2>
+      <p>Install AuditPilot and verify marketing tags across any client site in seconds.</p>
+      <div class="hero-actions">
+        <a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener" class="btn btn-chrome btn-primary" style="padding: 0.85rem 2rem; font-size: 1rem;">
+          Install Script Checker — Free ↗
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom: 0.75rem;">
+            <div class="brand-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <span>AuditPilot</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 0.88rem; max-width: 320px;">
+            The website audit, CRO review, and white-label client acquisition platform for agencies and consultants.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Audit Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/tools/seo-audit-extension">SEO Audit Extension</a></li>
+            <li><a href="/tools/cro-gap-analysis">CRO Gap Analysis</a></li>
+            <li><a href="/tools/tracking-script-checker">Tracking Script Checker</a></li>
+            <li><a href="/features/white-label-reports">White-Label Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Comparisons</h4>
+          <ul class="footer-links">
+            <li><a href="/compare/auditpilot-vs-detailed-seo">vs Detailed SEO</a></li>
+            <li><a href="/compare/auditpilot-vs-screaming-frog">vs Screaming Frog</a></li>
+            <li><a href="/compare/auditpilot-vs-seo-minion">vs SEO Minion</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="/resources/seo-audit-checklist">SEO Audit Checklist</a></li>
+            <li><a href="/resources/cro-audit-checklist">CRO Audit Checklist</a></li>
+            <li><a href="/author/">Founder & Author</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener">Chrome Web Store ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Audit Pilot. A Product of Inoviqa. SEO &bull; CRO &bull; Tracking &bull; Growth Reports.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="/#">Privacy Policy</a>
+          <a href="/#">Terms of Service</a>
+          <a href="/sitemap_index.xml">XML Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

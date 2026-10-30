@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AuditPilot — B2B Website Conversion Audit & Client Acquisition Engine</title>
-  <meta name="description" content="Audit any prospective client website in 60 seconds. Calculate exact revenue loss from mobile latency, benchmark Core Web Vitals, and generate white-label agency client pitch decks.">
-  <meta name="keywords" content="website conversion audit, website audit tool, b2b website audit, agency client acquisition, revenue leak calculator, core web vitals audit, website speed audit, conversion rate optimization tool, white label website audit, agency pitch deck generator, loom video audit script, cold outreach proposal template, close web design clients, cro audit tool">
-  <meta name="author" content="AuditPilot Inc.">
+  <title>AuditPilot | Website Audit Chrome Extension for SEO, CRO &amp; Tracking</title>
+  <meta name="description" content="Audit websites in one click. Uncover SEO issues, CRO gaps, and missing tracking pixels (GA4, Meta). Generate client-ready white-label reports in minutes.">
+  <meta name="keywords" content="website audit chrome extension, best seo audit chrome extension, cro audit tool for agencies, ga4 and meta pixel checker extension, white label website audit report pdf, technical seo chrome extension">
+  <meta name="author" content="Walid Hasan, Inoviqa">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#2563EB">
   <link rel="canonical" href="https://auditpilot.us/">
 
+  <!-- Hero Image Preload for LCP Optimization -->
+  <link rel="preload" as="image" href="./dashboard-preview.jpg" fetchpriority="high">
+
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://auditpilot.us/">
-  <meta property="og:title" content="AuditPilot — B2B Website Conversion Audit & Client Acquisition Engine">
-  <meta property="og:description" content="Diagnose revenue leaks, run Core Web Vitals speed diagnostics, and generate white-label client proposals in 60 seconds.">
+  <meta property="og:title" content="AuditPilot | Website Audit Chrome Extension for SEO, CRO &amp; Tracking">
+  <meta property="og:description" content="Audit websites in one click. Uncover SEO issues, CRO gaps, and missing tracking pixels (GA4, Meta). Generate client-ready white-label reports in minutes.">
   <meta property="og:image" content="https://auditpilot.us/dashboard-preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="AuditPilot B2B Website Audit and Revenue Leakage Dashboard Preview">
+  <meta property="og:image:alt" content="AuditPilot Website Audit Chrome Extension Dashboard Preview">
   <meta property="og:site_name" content="AuditPilot">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://auditpilot.us/">
-  <meta name="twitter:title" content="AuditPilot — B2B Website Conversion Audit Engine">
-  <meta name="twitter:description" content="Close high-ticket agency web clients with data-backed revenue leakage audits and personalized pitch decks.">
+  <meta name="twitter:title" content="AuditPilot | Website Audit Chrome Extension for SEO, CRO &amp; Tracking">
+  <meta name="twitter:description" content="Audit websites in one click. Uncover SEO issues, CRO gaps, and missing tracking pixels (GA4, Meta). Generate client-ready white-label reports in minutes.">
   <meta name="twitter:image" content="https://auditpilot.us/dashboard-preview.jpg">
 
   <!-- Favicon -->
@@ -49,74 +52,59 @@
     "@graph": [
       {
         "@type": "SoftwareApplication",
+        "@id": "https://auditpilot.us/#software",
         "name": "AuditPilot",
         "url": "https://auditpilot.us",
-        "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "Conversion Rate Optimization & Website Audit",
-        "operatingSystem": "All (Web-based)",
-        "browserRequirements": "Requires JavaScript. Supports Chrome, Safari, Firefox, Edge.",
-        "description": "Enterprise B2B website conversion audit, Core Web Vitals diagnostic engine, revenue leak calculator, and agency client acquisition platform.",
-        "keywords": "website conversion audit, revenue leak calculator, core web vitals diagnostic, agency pitch deck, white label website audit",
-        "screenshot": "https://auditpilot.us/dashboard-preview.jpg",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Google Chrome, Chromium, Brave, Microsoft Edge",
+        "softwareVersion": "1.0.0",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "ratingCount": "2",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
         "offers": [
           {
             "@type": "Offer",
-            "name": "Starter Hustler",
-            "price": "29.99",
-            "priceCurrency": "USD",
-            "billingDuration": "P1M",
-            "availability": "https://schema.org/InStock",
-            "url": "https://auditpilot.us/#landing-pricing"
+            "name": "Free Tier",
+            "price": "0",
+            "priceCurrency": "USD"
           },
           {
             "@type": "Offer",
-            "name": "Agency Pro",
+            "name": "Pro Tier",
             "price": "79.99",
-            "priceCurrency": "USD",
-            "billingDuration": "P1M",
-            "availability": "https://schema.org/InStock",
-            "url": "https://auditpilot.us/#landing-pricing"
-          },
-          {
-            "@type": "Offer",
-            "name": "Enterprise Scale",
-            "price": "199.99",
-            "priceCurrency": "USD",
-            "billingDuration": "P1M",
-            "availability": "https://schema.org/InStock",
-            "url": "https://auditpilot.us/#landing-pricing"
+            "priceCurrency": "USD"
           }
         ],
-        "featureList": [
-          "Instant Website Conversion & Mobile Viewport Audit",
-          "Automated Core Web Vitals Speed Diagnostics (LCP, CLS, INP)",
-          "Monthly Revenue Leakage Dollar Model Calculator",
-          "60-Second Loom Video Screen Recording Script Synthesizer",
-          "Two-Tier Client Pitch Proposal Generator",
-          "White-Label Studio with Custom Agency Branding & Booking URLs",
-          "Visual Outreach CRM Kanban Pipeline Tracker"
-        ]
+        "description": "Chrome extension for automated website audits, CRO reviews, tracking script detection, and agency-ready growth reports."
       },
       {
         "@type": "Organization",
-        "name": "AuditPilot Inc.",
+        "@id": "https://auditpilot.us/#organization",
+        "name": "AuditPilot",
         "url": "https://auditpilot.us",
         "logo": "https://auditpilot.us/logo.jpg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "support@auditpilot.us",
-          "contactType": "Customer Support"
-        }
+        "founder": {
+          "@type": "Person",
+          "name": "Walid Hasan",
+          "url": "https://auditpilot.us/author/"
+        },
+        "sameAs": [
+          "https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn",
+          "https://siteauditpilot.com"
+        ]
       },
       {
         "@type": "WebSite",
         "@id": "https://auditpilot.us/#website",
         "url": "https://auditpilot.us/",
         "name": "AuditPilot",
-        "description": "Enterprise B2B Website Conversion Audit & Client Acquisition Engine",
+        "description": "Website Audit Chrome Extension for SEO, CRO & Tracking",
         "publisher": {
-          "@type": "Organization",
-          "name": "AuditPilot Inc."
+          "@id": "https://auditpilot.us/#organization"
         }
       },
       {
@@ -124,18 +112,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How does the Revenue Leak Calculator estimate dollar figures?",
+            "name": "What is AuditPilot?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The calculator applies industry-specific conversion benchmarks correlated with Core Web Vitals mobile latency (LCP) and tap target accessibility. By analyzing estimated monthly traffic against average order values, it calculates the baseline drop-off curve caused by high bounce rates and buried call-to-actions."
+              "text": "AuditPilot is a website audit Chrome extension that scans live web pages for SEO gaps, CRO bottlenecks, analytics tracking scripts, and performance signals, converting the findings into branded client reports."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I brand reports with my own agency logo and colors?",
+            "name": "Does AuditPilot detect tracking scripts like GA4 and Meta Pixel?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes! With Agency Pro and Enterprise plans, you have full access to the White-Label Studio. Enter your agency name, logo, phone, email, and Calendly booking link. All exported PDF diagnostic reports and client views will feature your brand, with zero mention of AuditPilot."
+              "text": "Yes. AuditPilot inspects live network signals and the DOM to verify the presence and configuration of Google Analytics 4, Google Tag Manager, Meta Pixel, Microsoft Clarity, LinkedIn Insight Tag, TikTok Pixel, and Pinterest Tags."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export white-label SEO audit reports for clients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Paid tiers support white-label exports, enabling digital agencies and consultants to brand reports with custom agency logos, specific notes, and tailored call-to-action buttons."
             }
           },
           {
@@ -225,17 +221,30 @@
       <section class="audit-hero" id="teaser-scanner">
         <div class="container">
           <div class="hero-tag">
-            <span class="ui-badge badge-blue">Enterprise B2B Client Acquisition Engine</span>
+            <a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener" class="ui-badge badge-blue" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.4rem 0.85rem; border-radius: 9999px;">
+              <span>★ ★ ★ ★ ★ Rated 5.0 on Chrome Web Store</span>
+              <span>&bull;</span>
+              <span>1-Click Website Audit Extension</span>
+            </a>
           </div>
 
           <h1 class="hero-h1">
-            Diagnose Website Revenue Leaks.<br>
-            Close $2,500+ Projects in 60 Seconds.
+            Audit Any Website in Seconds. Uncover SEO, CRO, and Tracking Gaps.
           </h1>
 
           <p class="hero-lead">
-            Deliver executive diagnostic audits that reveal exact mobile conversion friction, uncompressed assets, and estimated lost revenue. Synthesize personalized video and email pitches that book discovery calls.
+            Audit websites in one click with the AuditPilot Chrome Extension or online engine. Uncover SEO issues, CRO bottlenecks, Core Web Vitals latency, and missing tracking pixels (GA4, Meta). Generate client-ready white-label reports in minutes.
           </p>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+            <a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); color: #FFFFFF; text-decoration: none; padding: 0.85rem 1.75rem; font-size: 0.98rem; box-shadow: 0 4px 14px rgba(37,99,235,0.35);">
+              <span>Add to Chrome — It's Free</span>
+              <span style="font-size: 1.1rem;">↗</span>
+            </a>
+            <button class="btn btn-secondary btn-lg" onclick="document.getElementById('marketingDomainInput').focus();" style="font-size: 0.98rem; padding: 0.85rem 1.5rem;">
+              <span>Try Cloud Scanner Below ↓</span>
+            </button>
+          </div>
 
           <!-- Interactive Search & Analysis Bar -->
           <div class="search-box-b2b">
@@ -434,15 +443,57 @@
         </div>
       </section>
 
+      <!-- Core Audit Capabilities: SEO, CRO, Performance, and Tracking -->
+      <section class="container" style="padding: 3.5rem 1.5rem;" id="core-capabilities">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto 2.5rem;">
+          <span class="ui-badge badge-blue">Comprehensive Diagnostic Heuristics</span>
+          <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--color-text-main); margin-top: 0.5rem; letter-spacing: -0.02em;">
+            Core Audit Capabilities: SEO, CRO, Performance, and Tracking
+          </h2>
+          <p style="color: var(--color-text-muted); font-size: 1rem; margin-top: 0.5rem;">
+            Inspect any web page in 1 click using the AuditPilot Chrome Extension or online scanner. Identify ranking bottlenecks, conversion friction, and missing analytics pixels instantly.
+          </p>
+        </div>
+
+        <div class="how-it-works-grid">
+          <div class="step-card-b2b">
+            <div class="brand-icon-box" style="margin-bottom: 1rem;">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <h3>Comprehensive SEO Inspection (Metadata, Headings, Links)</h3>
+            <p>Scan title tag pixel lengths, meta descriptions, canonical URLs, semantic H1-H6 heading hierarchy, image alt text, and broken link signals in a single click.</p>
+            <a href="/tools/seo-audit-extension" style="display: inline-block; margin-top: 0.75rem; color: var(--color-primary); font-weight: 600; font-size: 0.88rem; text-decoration: none;">Explore SEO Extension →</a>
+          </div>
+
+          <div class="step-card-b2b">
+            <div class="brand-icon-box" style="margin-bottom: 1rem;">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+            </div>
+            <h3>Conversion Rate Optimization (CTA &amp; Messaging Clarity)</h3>
+            <p>Analyze mobile tap target spacing, above-the-fold CTA visibility, form field friction, layout contrast, and calculate estimated monthly revenue loss caused by bounce rates.</p>
+            <a href="/tools/cro-gap-analysis" style="display: inline-block; margin-top: 0.75rem; color: var(--color-primary); font-weight: 600; font-size: 0.88rem; text-decoration: none;">Explore CRO Analysis →</a>
+          </div>
+
+          <div class="step-card-b2b">
+            <div class="brand-icon-box" style="margin-bottom: 1rem;">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            </div>
+            <h3>Deep Script Detection (GA4, GTM, Meta Pixel, Clarity)</h3>
+            <p>Verify live analytics and advertising beacons across Google Analytics 4, Tag Manager, Meta Pixel, Microsoft Clarity, and TikTok Pixel to guarantee zero attribution leakage.</p>
+            <a href="/tools/tracking-script-checker" style="display: inline-block; margin-top: 0.75rem; color: var(--color-primary); font-weight: 600; font-size: 0.88rem; text-decoration: none;">Explore Script Checker →</a>
+          </div>
+        </div>
+      </section>
+
       <!-- How It Works Section -->
       <section class="container" style="padding: 3rem 1.5rem;" id="how-it-works">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
           <span class="ui-badge badge-blue">Proven 3-Step Cold Acquisition Engine</span>
           <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--color-text-main); margin-top: 0.5rem; letter-spacing: -0.02em;">
-            From Prospect URL to Signed $2,500+ Retainer in 3 Steps
+            How AuditPilot Fits Into Your Growth Workflow
           </h2>
           <p style="color: var(--color-text-muted); font-size: 1rem; margin-top: 0.5rem;">
-            Stop sending generic "I can redesign your site" emails that get marked as spam. Give prospects incontrovertible proof of their revenue loss.
+            From prospecting to closed high-ticket retainer in 3 proven steps. Stop sending generic cold pitches that get ignored.
           </p>
         </div>
 
@@ -527,15 +578,49 @@
         </div>
       </section>
 
+      <!-- White-Label Reports Feature Section -->
+      <section class="container" style="padding: 3rem 1.5rem;" id="reports">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+          <span class="ui-badge badge-blue">Agency Client Deliverables</span>
+          <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--color-text-main); margin-top: 0.5rem; letter-spacing: -0.02em;">
+            Generate Agency-Ready White-Label Audit Reports
+          </h2>
+          <p style="color: var(--color-text-muted); font-size: 1rem; margin-top: 0.5rem;">
+            Export client-ready diagnostic PDFs customized with your agency logo, brand accent colors, consultant notes, and Calendly booking URL. 100% white-labeled with zero mention of AuditPilot.
+          </p>
+        </div>
+
+        <div class="how-it-works-grid">
+          <div class="step-card-b2b">
+            <div class="step-badge-number">★</div>
+            <h3>Custom Agency Logo & Header</h3>
+            <p>Upload your agency logo to automatically brand every diagnostic PDF header, cover slide, and client proposal deck.</p>
+            <a href="/features/white-label-reports" style="display: inline-block; margin-top: 0.5rem; color: var(--color-primary); font-weight: 600; font-size: 0.88rem; text-decoration: none;">Learn About White-Labeling →</a>
+          </div>
+          <div class="step-card-b2b">
+            <div class="step-badge-number">★</div>
+            <h3>1-Click Executive PDF Export</h3>
+            <p>Generate clean, professional diagnostic audits with visual charts, Core Web Vitals grades, and estimated dollar leakage figures.</p>
+            <a href="/features/white-label-reports" style="display: inline-block; margin-top: 0.5rem; color: var(--color-primary); font-weight: 600; font-size: 0.88rem; text-decoration: none;">Explore PDF Reports →</a>
+          </div>
+          <div class="step-card-b2b">
+            <div class="step-badge-number">★</div>
+            <h3>Embedded Meeting Booking Links</h3>
+            <p>Embed your direct Calendly, HubSpot, or Cal.com scheduling link so prospect readers can immediately book a discovery call.</p>
+            <a href="/features/white-label-reports" style="display: inline-block; margin-top: 0.5rem; color: var(--color-primary); font-weight: 600; font-size: 0.88rem; text-decoration: none;">See Booking Features →</a>
+          </div>
+        </div>
+      </section>
+
       <!-- Public Pricing Section -->
       <section class="container" style="padding: 3.5rem 1.5rem;" id="landing-pricing">
         <div style="text-align: center; max-width: 650px; margin: 0 auto 1.5rem;">
           <span class="ui-badge badge-blue">Transparent B2B Pricing</span>
           <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--color-text-main); margin-top: 0.5rem; letter-spacing: -0.02em;">
-            One Client Deal Pays for 2 Years of AuditPilot
+            Transparent Plans Built for Freelancers and Agencies
           </h2>
           <p style="color: var(--color-text-muted); font-size: 1rem; margin-top: 0.5rem;">
-            All plans include a 14-day free trial. Cancel or switch anytime.
+            One client redesign deal covers 2 years of AuditPilot. All plans include a 14-day free trial.
           </p>
         </div>
 
@@ -628,21 +713,41 @@
         <div class="faq-accordion-list">
           <div class="faq-item-b2b active">
             <button class="faq-question-btn" type="button">
-              <span>How does the Revenue Leak Calculator estimate dollar figures?</span>
+              <span>What is AuditPilot?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-answer-panel">
-              The calculator applies industry-specific conversion benchmarks correlated with Core Web Vitals mobile latency (LCP) and tap target accessibility. By analyzing estimated monthly traffic against average order values, it calculates the baseline drop-off curve caused by high bounce rates and buried call-to-actions.
+              AuditPilot is a website audit Chrome extension that scans live web pages for SEO gaps, CRO bottlenecks, analytics tracking scripts, and performance signals, converting the findings into branded client reports.
             </div>
           </div>
 
           <div class="faq-item-b2b">
             <button class="faq-question-btn" type="button">
-              <span>Can I brand reports with my own agency logo and colors?</span>
+              <span>Does AuditPilot detect tracking scripts like GA4 and Meta Pixel?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-answer-panel">
-              Yes! With Agency Pro and Enterprise plans, you have full access to the White-Label Studio. Enter your agency name, logo, phone, email, and Calendly booking link. All exported PDF diagnostic reports and client views will feature your brand, with zero mention of AuditPilot.
+              Yes. AuditPilot inspects live network signals and the DOM to verify the presence and configuration of Google Analytics 4, Google Tag Manager, Meta Pixel, Microsoft Clarity, LinkedIn Insight Tag, TikTok Pixel, and Pinterest Tags.
+            </div>
+          </div>
+
+          <div class="faq-item-b2b">
+            <button class="faq-question-btn" type="button">
+              <span>Can I export white-label SEO audit reports for clients?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-answer-panel">
+              Yes. Paid tiers support white-label exports, enabling digital agencies and consultants to brand reports with custom agency logos, specific notes, and tailored call-to-action buttons.
+            </div>
+          </div>
+
+          <div class="faq-item-b2b">
+            <button class="faq-question-btn" type="button">
+              <span>How does the Revenue Leak Calculator estimate dollar figures?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-answer-panel">
+              The calculator applies industry-specific conversion benchmarks correlated with Core Web Vitals mobile latency (LCP) and tap target accessibility. By analyzing estimated monthly traffic against average order values, it calculates the baseline drop-off curve caused by high bounce rates and buried call-to-actions.
             </div>
           </div>
 
@@ -658,11 +763,11 @@
 
           <div class="faq-item-b2b">
             <button class="faq-question-btn" type="button">
-              <span>How do I host this on GitHub Pages and a custom domain?</span>
+              <span>How do agencies use AuditPilot to close high-ticket client retainers?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-answer-panel">
-              AuditPilot is built as a production-ready single-page application with relative asset bundling. You can host the public frontend on GitHub Pages completely free, and configure a custom domain (e.g. auditpilot.youragency.com) via standard CNAME records in minutes.
+              Agencies scan prospective client websites to identify specific revenue leakage and speed bottlenecks. Instead of sending generic cold outreach, agencies send personalized 60-second video scripts and data-backed two-tier proposals that prove the exact dollar ROI of fixing their website.
             </div>
           </div>
         </div>
@@ -753,9 +858,9 @@
   <footer class="site-footer-grounded">
     <div class="container">
       
-      <div class="footer-top-grid">
+      <div class="footer-top-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
         <!-- Col 1: Brand & Security -->
-        <div>
+        <div style="grid-column: span 1;">
           <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.5rem;">
             <div class="brand-icon-box">
               <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
@@ -763,47 +868,59 @@
             <strong style="font-size: 1.15rem; color: var(--color-text-main);">AuditPilot</strong>
           </div>
           <p class="footer-brand-blurb">
-            The enterprise website audit, revenue loss calculation, and white-label client acquisition engine for growth agencies and consulting firms.
+            The website audit, CRO review, and white-label client acquisition platform for agencies and consultants.
           </p>
-          <div class="footer-compliance-badges">
-            <span class="footer-badge-pill">🛡️ 256-bit SSL Encryption</span>
-            <span class="footer-badge-pill">🔒 GDPR & CCPA Ready</span>
-            <span class="footer-badge-pill">💳 Stripe Verified Billing</span>
+          <div class="footer-compliance-badges" style="margin-top: 0.75rem;">
+            <span class="footer-badge-pill">🛡️ 256-bit SSL</span>
+            <span class="footer-badge-pill">💳 Stripe Verified</span>
+            <a href="https://chromewebstore.google.com/detail/audit-pilot-1-click-websi/bpopbhodmhhbedeepfkmifaciaafjbgn" target="_blank" rel="noopener" class="footer-badge-pill" style="text-decoration:none; color:inherit;">★ 5.0 Chrome Web Store</a>
           </div>
         </div>
 
-        <!-- Col 2: Platform -->
+        <!-- Col 2: Audit Tools -->
         <div>
-          <h4 class="footer-col-title">Platform</h4>
+          <h4 class="footer-col-title">Audit Tools</h4>
           <ul class="footer-links-list">
-            <li><a onclick="switchView('view-audit'); window.scrollTo({top:0, behavior:'smooth'});">Audit Scanner</a></li>
-            <li><a onclick="switchView('view-saved-audits'); window.scrollTo({top:0, behavior:'smooth'});">Saved Audits</a></li>
-            <li><a onclick="switchView('view-crm'); window.scrollTo({top:0, behavior:'smooth'});">Outreach Pipeline CRM</a></li>
-            <li><a onclick="switchView('view-white-label'); window.scrollTo({top:0, behavior:'smooth'});">White-Label Studio</a></li>
-            <li><a onclick="switchView('view-billing'); window.scrollTo({top:0, behavior:'smooth'});">Plans & Pricing</a></li>
+            <li><a href="/tools/seo-audit-extension">SEO Audit Extension</a></li>
+            <li><a href="/tools/cro-gap-analysis">CRO Gap Analysis</a></li>
+            <li><a href="/tools/tracking-script-checker">Tracking Script Checker</a></li>
+            <li><a href="/features/white-label-reports">White-Label Reports</a></li>
+            <li><a onclick="switchView('view-audit'); window.scrollTo({top:0, behavior:'smooth'});">Online Web Scanner</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Legal & Trust -->
+        <!-- Col 3: Comparisons -->
         <div>
-          <h4 class="footer-col-title">Trust & Legal</h4>
+          <h4 class="footer-col-title">Comparisons</h4>
           <ul class="footer-links-list">
+            <li><a href="/compare/auditpilot-vs-detailed-seo">vs Detailed SEO</a></li>
+            <li><a href="/compare/auditpilot-vs-screaming-frog">vs Screaming Frog</a></li>
+            <li><a href="/compare/auditpilot-vs-seo-minion">vs SEO Minion</a></li>
+            <li><a onclick="switchView('view-crm'); window.scrollTo({top:0, behavior:'smooth'});">Outreach CRM Pipeline</a></li>
+            <li><a onclick="switchView('view-white-label'); window.scrollTo({top:0, behavior:'smooth'});">White-Label Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Resources & Guides -->
+        <div>
+          <h4 class="footer-col-title">Resources & Trust</h4>
+          <ul class="footer-links-list">
+            <li><a href="/resources/seo-audit-checklist">SEO Audit Checklist</a></li>
+            <li><a href="/resources/cro-audit-checklist">CRO Audit Checklist</a></li>
+            <li><a href="/author/">Founder & Author</a></li>
             <li><a id="footerPrivacyLink">Privacy Policy</a></li>
             <li><a id="footerTermsLink">Terms of Service</a></li>
-            <li><a id="footerCookieSettingsLink">Cookie Preferences</a></li>
-            <li><a id="footerGdprLink">GDPR Data Rights</a></li>
-            <li><a onclick="openModal('privacyModal')">Subprocessors & Security</a></li>
+            <li><a href="/sitemap_index.xml">XML Sitemap Index</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Account & Billing -->
+        <!-- Col 5: Account & Portals -->
         <div>
           <h4 class="footer-col-title">Billing & Portals</h4>
           <ul class="footer-links-list">
             <li><a href="https://billing.stripe.com/p/login/8x29AS6R9d0V5Ps4tT4sE00" target="_blank" rel="noopener">Stripe Customer Portal ↗</a></li>
             <li><a onclick="openModal('signInModal')">Sign In to Workspace</a></li>
             <li><a onclick="openModal('signUpModal')">Start 14-Day Free Trial</a></li>
-            <li><a id="footerExportDataLink">Export My Data (JSON)</a></li>
             <li style="margin-top: 0.5rem; font-size: 0.8rem; color: #16A34A; display: flex; align-items: center; gap: 0.35rem;">
               <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #16A34A;"></span>
               All Systems Operational
@@ -814,12 +931,13 @@
 
       <div class="footer-bottom-flex">
         <div>
-          &copy; 2026 AuditPilot Inc. All rights reserved. Registered trademark.
+          &copy; 2026 Audit Pilot. A Product of Inoviqa. SEO &bull; CRO &bull; Tracking &bull; Growth Reports.
         </div>
         <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
           <a onclick="openModal('privacyModal')" style="color: inherit; text-decoration: none; cursor: pointer;">Privacy Policy</a>
           <a onclick="openModal('termsModal')" style="color: inherit; text-decoration: none; cursor: pointer;">Terms of Service</a>
-          <a onclick="openModal('privacySettingsModal')" style="color: inherit; text-decoration: none; cursor: pointer;">Privacy Settings</a>
+          <a href="/author/" style="color: inherit; text-decoration: none;">Editorial Leadership</a>
+          <a href="/sitemap_index.xml" style="color: inherit; text-decoration: none;">Sitemap Index</a>
           <span>Official Stripe Billing Partner</span>
         </div>
       </div>
